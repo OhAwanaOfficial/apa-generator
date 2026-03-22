@@ -42,7 +42,7 @@ document.getElementById("form").addEventListener("submit", async function(e) {
         source_type: document.getElementById("source_type").value
     };
 
-    const response = await fetch("http://127.0.0.1:8000/apa", {
+    const response = await fetch("https://apa-generator-production.up.railway.app/apa", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
