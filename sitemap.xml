@@ -2,15 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://ohawanaofficial.github.io/apa-generator/</loc>
+<loc>https://ohawanaofficial.github.io/index.html</loc>
 </url>
 
 <url>
-<loc>https://ohawanaofficial.github.io/apa-generator/apa-reference-generator.html</loc>
+<loc>https://ohawanaofficial.github.io/apa-reference-generator.html</loc>
 </url>
 
 <url>
-<loc>https://ohawanaofficial.github.io/apa-generator/apa-website-citation.html</loc>
+<loc>https://ohawanaofficial.github.io/how-to-cite-book-apa.html</loc>
+</url>
+
+<url>
+<loc>https://ohawanaofficial.github.io/how-to-cite-website-apa.html</loc>
+</url>
+
+<url>
+<loc>https://ohawanaofficial.github.io/how-to-cite-journal-apa.html</loc>
+</url>
+
+<url>
+<loc>https://ohawanaofficial.github.io/apa-format-example.html</loc>
+</url>
+
+<url>
+<loc>https://ohawanaofficial.github.io/apa-website-reference-example.html</loc>
+</url>
+
+<url>
+<loc>https://ohawanaofficial.github.io/apa-book-reference-example.html</loc>
 </url>
 
 </urlset>
