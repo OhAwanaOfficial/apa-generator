@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>APA Format Example for Students (Free Generator)</title>
+
+    <meta name="description" content="See APA format examples for books, websites, and journals. Use our free APA citation generator to create accurate references instantly.">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>APA Format Example for Students</h1>
+
+<p>
+APA format is used in academic writing to cite sources like books, websites, and journals.
+Below are simple APA format examples for students.
+</p>
+
+<h2>APA Book Example</h2>
+<p>
+Smith, J. (2020). Introduction to Psychology. Oxford University Press.
+</p>
+
+<h2>APA Website Example</h2>
+<p>
+Smith, J. (2023). Understanding AI. Retrieved from https://example.com
+</p>
+
+<h2>APA Journal Example</h2>
+<p>
+Smith, J. (2021). AI in education. Journal of Modern Learning.
+</p>
+
+<h2>Generate APA Citation Instantly</h2>
+<p>
+Use this free APA citation generator to create accurate references in seconds.
+</p>
+
+<form id="form">
+    <input type="text" id="author" placeholder="Author(s) (comma separated)" required><br><br>
+    
+    <input type="number" id="year" placeholder="Year" required><br><br>
+    
+    <input type="text" id="title" placeholder="Title" required><br><br>
+    
+    <input type="text" id="publisher" placeholder="Publisher"><br><br>
+    
+    <input type="text" id="url" placeholder="URL"><br><br>
+
+    <select id="source_type">
+        <option value="book">Book</option>
+        <option value="website">Website</option>
+        <option value="journal">Journal</option>
+    </select><br><br>
+
+    <button type="submit">Generate Citation</button>
+</form>
+
+<h2 id="result"></h2>
+
+<p>
+Use our <a href="index.html">APA citation generator</a> for all sources.
+</p>
+
+<p>Related pages:</p>
+<ul>
+<li><a href="how-to-cite-book-apa.html">Cite Book APA</a></li>
+<li><a href="how-to-cite-website-apa.html">Cite Website APA</a></li>
+<li><a href="how-to-cite-journal-apa.html">Cite Journal APA</a></li>
+</ul>
+
+<script>
+document.getElementById("form").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const data = {
+        author: document.getElementById("author").value,
+        year: parseInt(document.getElementById("year").value),
+        title: document.getElementById("title").value,
+        publisher: document.getElementById("publisher").value,
+        url: document.getElementById("url").value,
+        source_type: document.getElementById("source_type").value
+    };
+
+    const response = await fetch("https://apa-generator-production.up.railway.app/apa", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    });
+
+    const result = await response.json();
+    document.getElementById("result").innerText = result.citation || result.error;
+});
+</script>
+
+</body>
+</html>
