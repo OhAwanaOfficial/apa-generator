@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ohawanaofficial.github.io/apa-generator/sitemap.xml
