@@ -1,153 +1,188 @@
-# 📌 Project Context – APA Citation Generator (Updated)
+# 📌 Project: APA Citation Generator
 
-## 🧠 Project Overview
-A simple SEO-driven web tool that generates APA citations using a Python backend API and static frontend hosted on GitHub Pages.
-
----
-
-# 🌐 Architecture
-
-## Frontend
-- Hosted on GitHub Pages
-- Static HTML pages
-- Internal linking between pages
-
-## Backend
-- Hosted on Railway (temporary)
-- API endpoint:
-  https://apa-generator-production.up.railway.app/apa
-
-⚠️ Note: Railway free tier expires soon → migration planned
+## 🚀 Current Status
+- Frontend: ✅ Deployed (GitHub Pages)
+- Backend: ❌ Removed (converted to pure JavaScript)
+- Cost: 💯 $0 (fully free architecture)
+- Live URL: https://ohawanaofficial.github.io/apa-generator/
 
 ---
 
-# 📁 Current File Structure
+## 🧠 Architecture
 
-## Core Pages
-- index.html ✅ (Updated with generator section)
-- apa-reference-generator.html
-- how-to-cite-book-apa.html ✅ (generator line added)
-- how-to-cite-website-apa.html ✅ (generator line added)
-- how-to-cite-journal-apa.html ✅ (generator line added)
+### Before
+- HTML frontend
+- Python backend (Railway)
+- API-based citation generation
 
-## Supporting Pages
-- apa-format-example.html
-- apa-website-reference-example.html
-- apa-book-reference-example.html
-
-## Redirect Fix
-- apa-website-citation.html → redirects to correct page
-
-## SEO Files
-- sitemap.xml
-- robots.txt
+### Now (Optimized)
+- Pure HTML + JavaScript
+- No backend dependency
+- Client-side APA generation logic
+- Faster + zero cost
 
 ---
 
-# 🔍 SEO Strategy
+## 📁 Project Structure
+apa-generator/
+│
+├── index.html
+├── apa-generator.js
+│
+├── apa-reference-generator.html
+├── apa-format-example.html
+├── apa-book-reference-example.html
+├── apa-website-reference-example.html
+│
+├── how-to-cite-book-apa.html
+├── how-to-cite-website-apa.html
+├── how-to-cite-journal-apa.html
+│
+├── sitemap.xml
+└── project_context.md
 
-## Target Keywords (High priority)
-- how to cite book apa
-- how to cite a textbook apa
-- how to reference a website apa
-- how do you cite a website in apa
+---
 
-## Generator Intent Keywords (NEW ALIGNMENT)
+## ⚙️ Core Functionality
+
+### JS Logic
+- `formatAuthors()` → formats author names into APA style
+- `formatTitle()` → converts title to sentence case
+- `generateAPA()` → generates citation based on type:
+  - book
+  - website
+  - journal
+
+### Output Format Example
+Smith, J. (2020). Test book.
+
+---
+
+## 🔍 SEO Strategy
+
+### Keyword Targeting
+Primary:
 - apa citation generator
-- apa citer
-- free apa bibliography generator
-- cite this apa
+- apa reference generator
+- free apa citation generator
 
-## Supporting Keywords
+Secondary:
+- how to cite book apa
 - how to cite website apa
+- how to cite journal apa
 
 ---
 
-# 🚀 Current SEO State
+## 📄 Pages Strategy
 
-- Sitemap submitted in Google Search Console
-- Pages crawled and partially indexed
-- Impressions started (early signals detected)
-- Queries observed:
-  - apa citer
-  - free apa bibliography generator
-  - cite this apa
+### 1. Tool Pages
+- index.html
+- apa-reference-generator.html
 
-- Initial backlinks created:
-  - Quora
-  - Medium
+### 2. Intent Pages
+- how-to-cite-book-apa.html
+- how-to-cite-website-apa.html
+- how-to-cite-journal-apa.html
 
----
-
-# ⚠️ Current Issues
-
-## 1. Crawled but Not Indexed (6 pages)
-- Reason:
-  - Low authority
-  - Similar structure
-  - Google testing limited pages first
-
-- Status:
-  - Some pages pending
-  - One page previously failed
-
-## 2. Backend Limitation
-- Railway shows remaining free usage days
-- Risk: API will stop working after expiration
+### 3. Supporting Pages
+- apa-format-example.html
+- apa-book-reference-example.html
+- apa-website-reference-example.html
 
 ---
 
-# 🛠️ Recent Fixes Applied
+## 🔗 Internal Linking (IMPORTANT)
 
-- Added generator-related paragraph to how-to pages
-- Added “Free APA Citation Generator” section to main page
-- Performed controlled URL inspection:
-  - how-to pages (done earlier)
-  - index.html (latest)
+Added section to all pages:
+Related APA Guides
 
----
-
-# 🎯 Strategy Going Forward
-
-## Phase: Early Ranking (NEW)
-
-1. Do not over-edit pages
-2. Do not repeatedly request indexing
-3. Allow Google to stabilize impressions
-4. Monitor GSC → Queries & Pages
+Purpose:
+- Improve crawlability
+- Distribute authority
+- Help indexing
 
 ---
 
-# 📊 Current Status
+## 📊 Google Search Console Status
 
-| Area | Status |
-|------|--------|
-| Structure | ✅ Complete |
-| Pages | ✅ Optimized |
-| Indexing | ⏳ Partial |
-| Impressions | 🚀 Started |
-| Backend | ⚠️ Temporary |
-| SEO Alignment | ✅ Improved |
+### Current Observations
+- ~174 queries detected
+- 0 clicks (early phase)
+- Positions: ~60–80
+- Impressions growing
 
----
+### Indexed Pages
+- /apa-website-citation.html (main traction)
+- / (homepage)
 
-# 📌 Next Phase
-
-➡️ Wait 2–3 days (no changes)
-➡️ Analyze GSC query data
-➡️ Match pages to real queries
-➡️ Expand content based on actual search demand
+### Not Indexed (Previously)
+- Multiple pages → “Crawled, not indexed”
 
 ---
 
-# 🔚 Summary
+## 🔥 Actions Taken
 
-Project has successfully moved from:
-Indexing Phase → Early Ranking Phase
+- Removed backend (Python + Railway)
+- Converted to JavaScript
+- Fixed APA formatting logic
+- Added internal linking
+- Submitted selective pages to GSC:
+  - Homepage
+  - Website citation page
+  - Book citation page
 
-Now focus shifts to:
-- Query alignment
-- CTR improvement
-- Authority building
+---
 
-Avoid unnecessary changes and let Google complete evaluation.
+## ⏳ Current Phase
+
+### Phase: SEO Stabilization
+
+What we are doing:
+- Waiting for re-indexing
+- Monitoring GSC data
+- Avoiding unnecessary changes
+
+---
+
+## 🚫 Rules (STRICT)
+
+Do NOT:
+- Edit pages frequently
+- Spam URL inspection
+- Change structure randomly
+
+---
+
+## 📅 Next Steps
+
+After 3–5 days:
+
+1. Analyze GSC queries
+2. Identify ranking opportunities
+3. Improve CTR (titles/descriptions)
+4. Push positions upward
+
+---
+
+## 🎯 Goal
+
+Short-term:
+- Get 4–6 pages indexed
+- Reach position 30–50
+
+Mid-term:
+- First organic clicks
+- Stable impressions growth
+
+Long-term:
+- Rank for “APA citation generator”
+- Build consistent traffic
+
+---
+
+## 💡 Key Insight
+
+This project is now:
+- A functional SEO tool
+- In early Google testing phase
+- Positioned for growth with minimal cost
